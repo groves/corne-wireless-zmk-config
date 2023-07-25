@@ -27,7 +27,7 @@
    &trans  &kp EXCL &kp AT   &kp UP   &kp DLLR  &kp PRCNT &kp BSLH  &kp N7 &kp N8 &kp N9 &kp EQUAL &trans
    &trans  &kp LPAR &kp LEFT &kp DOWN &kp RIGHT &kp RPAR  &kp UNDER &kp N4 &kp N5 &kp N6 &kp ESC   &trans
    &trans  &kp LBKT &kp RBKT &kp HASH &kp LBRC  &kp RBRC  &kp ASTRK &kp N1 &kp N2 &kp N3 &kp PLUS  &trans
-                          	 &trans   &lt 2 N0  &kp DEL   &trans    &trans &trans
+                          	 &trans   &lt 5 N0  &kp DEL   &trans    &trans &trans
                         >;
                 };
 
@@ -37,7 +37,7 @@
    &trans &trans &trans &trans &trans &trans &trans &trans &kp LSHFT &kp LSFT &kp LSHFT &trans
    &trans &trans &trans &trans &trans &trans &trans &trans &kp LCMD  &kp LALT &kp LCTRL &trans
    &trans &trans &trans &trans &trans &trans &trans &trans &trans    &trans   &trans    &trans
-                    	&trans &trans &mo 1  &trans &trans &trans
+                    	&trans &trans &mo 4  &trans &trans &trans
                         >;
                 };
                 3_layer {
@@ -52,10 +52,19 @@
                 4_layer {
                         label = "4";
                         bindings = <
-   &trans  &kp LC(F12) &kp LC(F7) &kp LC(F8) &kp LC(F9) &trans &kp HYPR(P) &kp F7 &kp F8 &kp F9 &kp F12 &trans
-   &trans  &kp LC(F11) &kp LC(F4) &kp LC(F5) &kp LC(F6) &trans &trans      &kp F4 &kp F5 &kp F6 &kp F11 &trans
-   &trans  &kp LC(F10) &kp LC(F1) &kp LC(F2) &kp LC(F3) &trans &trans      &kp F1 &kp F2 &kp F3 &kp F10 &trans
-                  	              &trans     &trans     &trans &trans      &trans &trans
+   &trans  &kp LC(F12) &kp LC(F7) &kp LC(F8) &kp LC(F9) &trans &kp LC(LA(LS(LG(P)))) &kp F7 &kp F8 &kp F9 &kp F12 &trans
+   &trans  &kp LC(F11) &kp LC(F4) &kp LC(F5) &kp LC(F6) &trans &trans                &kp F4 &kp F5 &kp F6 &kp F11 &trans
+   &trans  &kp LC(F10) &kp LC(F1) &kp LC(F2) &kp LC(F3) &trans &trans                &kp F1 &kp F2 &kp F3 &kp F10 &trans
+                  	              &trans     &trans     &trans &trans                &trans &trans
+                        >;
+                };
+                5_layer {
+                        label = "5";
+                        bindings = <
+   &trans  &trans   &kp LC(LA(LG(W))) &kp LC(LA(LG(F))) &kp LC(LA(LS(LG(P))))            &trans &trans    &kp LG(N0) &kp LG(MINUS) &kp LG(PLUS)     &trans           &trans
+   &trans  &kp PIPE &kp BSLH          &kp MINUS         &kp LC(LA(LS(LG(SPACE))))        &trans &kp CARET &kp TILDE  &kp AMPS      &kp LC(LA(FSLH)) &kp LC(LA(RBKT)) &trans
+   &trans  &trans   &trans            &trans            &trans          &trans &trans    &trans     &trans        &trans           &trans           &trans
+                  	                  &trans            &trans          &trans &trans    &trans     &trans
                         >;
                 };
         };
