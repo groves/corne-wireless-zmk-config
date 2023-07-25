@@ -15,10 +15,10 @@
                 default_layer {
                         label = "0";
                         bindings = <
-   &trans    &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp SEMI &trans
-   &trans    &kp A &kp R &kp S &kp T &kp G   &kp M &kp N  &kp E     &kp I   &kp O    &trans
-   &trans    &kp Z &kp X &kp C &kp D &kp V   &kp K &kp H  &kp COMMA &kp DOT &kp FSLH &trans
-                  &kp TAB &kp LSHFT &lt 2 BSPC &lt 2 SQT &lt 1 SPACE &kp RET
+   &trans &kp Q &kp W &kp F   &kp P     &kp B      &kp J     &kp L       &kp U     &kp Y   &kp SEMI &trans
+   &trans &kp A &kp R &kp S   &kp T     &kp G      &kp M     &kp N       &kp E     &kp I   &kp O    &trans
+   &trans &kp Z &kp X &kp C   &kp D     &kp V      &kp K     &kp H       &kp COMMA &kp DOT &kp FSLH &trans
+                      &kp TAB &kp LSHFT &lt 3 BSPC &lt 2 SQT &lt 1 SPACE &kp RET
                         >;
                 };
                 1_layer {
@@ -34,10 +34,19 @@
                 2_layer {
                         label = "2";
                         bindings = <
-   &trans    &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &trans
-   &trans    &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &trans
-   &trans    &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &trans
-                    	     &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
+   &trans &trans &trans &trans &trans &trans &trans &trans &kp LSHFT &kp LSFT &kp LSHFT &trans
+   &trans &trans &trans &trans &trans &trans &trans &trans &kp LCMD  &kp LALT &kp LCTRL &trans
+   &trans &trans &trans &trans &trans &trans &trans &trans &trans    &trans   &trans    &trans
+                    	&trans &trans &mo 1  &trans &trans &trans
+                        >;
+                };
+                3_layer {
+                        label = "3";
+                        bindings = <
+   &trans &kp LSHFT &kp LSFT &kp LSHFT &trans &trans &trans &trans &trans &trans &trans &trans
+   &trans &kp LCTRL &kp LALT &kp LCMD  &trans &trans &trans &trans &trans &trans &trans &trans
+   &trans &trans    &trans   &trans    &trans &trans &trans &trans &trans &trans &trans &trans
+                    	     &trans    &trans &trans &mo 4  &trans &trans
                         >;
                 };
         };
