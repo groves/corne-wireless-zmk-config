@@ -49,5 +49,14 @@
                     	     &trans    &trans &trans &mo 4  &trans &trans
                         >;
                 };
+                4_layer {
+                        label = "4";
+                        bindings = <
+   &trans  &kp LC(F12) &kp LC(F7) &kp LC(F8) &kp LC(F9) &trans &kp HYPR(P) &kp F7 &kp F8 &kp F9 &kp F12 &trans
+   &trans  &kp LC(F11) &kp LC(F4) &kp LC(F5) &kp LC(F6) &trans &trans      &kp F4 &kp F5 &kp F6 &kp F11 &trans
+   &trans  &kp LC(F10) &kp LC(F1) &kp LC(F2) &kp LC(F3) &trans &trans      &kp F1 &kp F2 &kp F3 &kp F10 &trans
+                  	              &trans     &trans     &trans &trans      &trans &trans
+                        >;
+                };
         };
 };
