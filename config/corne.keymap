@@ -30,26 +30,26 @@
    &trans  &kp EXCL &kp AT   &kp UP   &kp DLLR  &kp PRCNT &kp BSLH  &kp N7 &kp N8 &kp N9 &kp EQUAL &trans
    &trans  &kp LPAR &kp LEFT &kp DOWN &kp RIGHT &kp RPAR  &kp UNDER &kp N4 &kp N5 &kp N6 &kp ESC   &trans
    &trans  &kp LBKT &kp RBKT &kp HASH &kp LBRC  &kp RBRC  &kp ASTRK &kp N1 &kp N2 &kp N3 &kp PLUS  &trans
-                          	 &trans   &lt 5 N0  &kp DEL   &trans    &trans &trans
+                             &trans   &lt 5 N0  &kp DEL   &trans    &trans &trans
                         >;
                 };
 
                 2_layer {
                         label = "2";
                         bindings = <
-   &trans &trans &trans &trans &trans &trans     &trans        &trans &kp LSHFT &kp LSFT &kp LSHFT &trans
-   &trans &trans &trans &trans &trans &trans     &kp LG(SPACE) &sl 1  &kp LCMD  &kp LALT &kp LCTRL &trans
-   &trans &trans &trans &trans &trans &trans     &trans        &trans &trans    &trans   &trans    &trans
-                    	&trans &trans &lt 4 BSPC &trans        &trans &trans
+   &trans &trans &trans &trans &trans &trans     &trans        &kp LSHFT &kp LSHFT &kp LSHFT &kp LSHFT &trans
+   &trans &trans &trans &trans &trans &trans     &kp LG(SPACE) &sl 1     &kp LCMD  &kp LALT  &kp LCTRL &trans
+   &trans &trans &trans &trans &trans &trans     &trans        &trans    &trans    &trans    &trans    &trans
+                        &trans &trans &lt 4 BSPC &trans        &trans    &trans
                         >;
                 };
                 3_layer {
                         label = "3";
                         bindings = <
-   &trans &kp LSHFT &kp LSFT &kp LSHFT &trans &trans        &trans &trans &trans &trans &trans &trans
-   &trans &kp LCTRL &kp LALT &kp LCMD  &sl 1  &kp LG(SPACE) &trans &trans &trans &trans &trans &trans
-   &trans &trans    &trans   &trans    &trans &trans        &trans &trans &trans &trans &trans &trans
-                    	     &trans    &trans &trans        &mo 4  &trans &trans
+   &trans &kp LSHFT &kp LSHFT &kp LSHFT &kp LSHFT &trans        &trans &trans &trans &trans &trans &trans
+   &trans &kp LCTRL &kp LALT  &kp LCMD  &sl 1     &kp LG(SPACE) &trans &trans &trans &trans &trans &trans
+   &trans &trans    &trans    &trans    &trans    &trans        &trans &trans &trans &trans &trans &trans
+                              &trans    &trans    &trans        &mo 4  &trans &trans
                         >;
                 };
                 4_layer {
@@ -65,7 +65,7 @@
                         label = "5";
                         bindings = <
    &trans  &trans   &kp CA(LG(W)) &kp CA(LG(F)) &kp HY(P)     &trans &trans    &kp LG(N0) &kp LG(MINUS) &kp LG(PLUS) &trans       &trans
-   &trans  &kp PIPE &kp BSLH      &kp MINUS     &kp HY(SPACE) &trans &kp CARET &kp TILDE  &kp AMPS      &kp CA(FSLH) &kp CA(RBKT) &trans
+   &trans  &kp PIPE &kp GRAVE     &kp MINUS     &kp HY(SPACE) &trans &kp CARET &kp TILDE  &kp AMPS      &kp CA(FSLH) &kp CA(RBKT) &trans
    &trans  &trans   &trans        &trans        &trans        &trans &trans    &trans     &trans        &trans       &trans       &trans
                   	              &trans        &trans        &trans &trans    &trans     &trans
                         >;
