@@ -37,10 +37,10 @@
                 2_layer {
                         label = "2";
                         bindings = <
-   &trans &trans &trans &trans &trans &trans &trans        &trans &kp LSHFT &kp LSFT &kp LSHFT &trans
-   &trans &trans &trans &trans &trans &trans &kp LG(SPACE) &sl 1  &kp LCMD  &kp LALT &kp LCTRL &trans
-   &trans &trans &trans &trans &trans &trans &trans        &trans &trans    &trans   &trans    &trans
-                    	&trans &trans &mo 4  &trans        &trans &trans
+   &trans &trans &trans &trans &trans &trans     &trans        &trans &kp LSHFT &kp LSFT &kp LSHFT &trans
+   &trans &trans &trans &trans &trans &trans     &kp LG(SPACE) &sl 1  &kp LCMD  &kp LALT &kp LCTRL &trans
+   &trans &trans &trans &trans &trans &trans     &trans        &trans &trans    &trans   &trans    &trans
+                    	&trans &trans &lt 4 BSPC &trans        &trans &trans
                         >;
                 };
                 3_layer {
