@@ -19,7 +19,7 @@
                         label = "0";
                         bindings = <
    &trans &kp Q &kp W &kp F   &kp P     &kp B      &kp J     &kp L       &kp U     &kp Y   &kp SEMI &trans
-   &trans &kp A &kp R &kp S   &lt 4 T   &lt 5 G    &lt 5 M   &lt 4 N     &kp E     &kp I   &kp O    &trans
+   &trans &kp A &kp R &lt 4 S &lt 5 T   &kp G      &kp M     &lt 5 N     &lt 4 E   &kp I   &kp O    &trans
    &trans &kp Z &kp X &kp C   &kp D     &kp V      &kp K     &kp H       &kp COMMA &kp DOT &kp FSLH &trans
                       &kp TAB &kp LSHFT &lt 3 BSPC &lt 2 SQT &lt 1 SPACE &kp RET
                         >;
