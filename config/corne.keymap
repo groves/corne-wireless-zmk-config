@@ -11,6 +11,10 @@
 #define CA(key) LC(LA(key))
 #define HY(key) CA(LS(LG(key)))
 
+&mt {
+    flavor = "tap-preferred";
+};
+
 / {
         keymap {
                 compatible = "zmk,keymap";
@@ -18,10 +22,10 @@
                 default_layer {
                         label = "0";
                         bindings = <
-   &trans &kp Q &kp W &kp F   &kp P     &kp B      &kp J     &kp L       &kp U     &kp Y   &kp SEMI &trans
-   &trans &kp A &kp R &lt 4 S &lt 5 T   &kp G      &kp M     &lt 5 N     &lt 4 E   &kp I   &kp O    &trans
-   &trans &kp Z &kp X &kp C   &kp D     &kp V      &kp K     &kp H       &kp COMMA &kp DOT &kp FSLH &trans
-                      &kp TAB &kp LSHFT &lt 3 BSPC &lt 2 SQT &lt 1 SPACE &kp RET
+   &trans &mt LCTRL Q &mt LALT W &mt LCMD F &kp P     &kp B      &kp J     &kp L       &mt LCMD U &mt LALT Y   &mt LCTRL SEMI &trans
+   &trans &kp A       &kp R      &lt 4 S    &lt 5 T   &kp G      &kp M     &lt 5 N     &lt 4 E    &kp I        &kp O          &trans
+   &trans &kp Z       &kp X      &kp C      &kp D     &kp V      &kp K     &kp H       &kp COMMA  &kp DOT      &kp FSLH       &trans
+                                 &kp TAB    &kp LSHFT &lt 3 BSPC &lt 2 SQT &lt 1 SPACE &kp RET
                         >;
                 };
                 1_layer {
