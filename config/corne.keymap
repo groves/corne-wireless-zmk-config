@@ -69,7 +69,7 @@
                         label = "5";
                         bindings = <
    &trans  &trans   &kp CA(LG(W)) &kp CA(LG(F)) &kp HY(P)     &trans        &trans    &kp LG(N0) &kp LG(MINUS) &kp LG(PLUS) &trans       &trans
-   &trans  &kp PIPE &kp GRAVE     &kp TILDE     &kp ESC       &kp HY(SPACE) &kp CARET &kp ESC    &kp AMPS      &kp CA(FSLH) &kp CA(RBKT) &trans
+   &trans  &kp PIPE &kp GRAVE     &kp TILDE     &kp ESC       &kp HY(SPACE) &kp CARET &kp ESC    &kp AMPS      &kp CA(BSLH) &kp CA(RBKT) &trans
    &trans  &trans   &trans        &trans        &trans        &trans        &trans    &trans     &trans        &trans       &trans       &trans
                   	              &trans        &trans        &trans        &trans    &trans     &trans
                         >;
