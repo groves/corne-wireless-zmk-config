@@ -41,19 +41,19 @@
                 2_layer {
                         label = "2";
                         bindings = <
-   &trans  &kp LC(F12) &kp LC(F7) &kp LC(F8) &kp LC(F9) &trans &kp HY(P) &kp F7 &kp F8 &kp F9 &kp F12 &trans
-   &trans  &kp LC(F11) &kp LC(F4) &kp LC(F5) &kp LC(F6) &trans &trans    &kp F4 &kp F5 &kp F6 &kp F11 &trans
-   &trans  &kp LC(F10) &kp LC(F1) &kp LC(F2) &kp LC(F3) &trans &trans    &kp F1 &kp F2 &kp F3 &kp F10 &trans
-                  	              &trans     &trans     &trans &trans    &trans &trans
+   &trans  &kp LC(F12) &kp LC(F7) &kp LC(F8) &kp LC(F9) &kp HY(B) &kp HY(P) &kp F7    &kp F8    &kp F9 &kp F12 &trans
+   &trans  &kp LC(F11) &kp LC(F4) &kp LC(F5) &kp LC(F6) &kp HY(G) &kp HY(M) &kp F4    &kp F5    &kp F6 &kp F11 &trans
+   &trans  &kp LC(F10) &kp LC(F1) &kp LC(F2) &kp LC(F3) &kp HY(U) &kp HY(Y) &kp F1    &kp F2    &kp F3 &kp F10 &trans
+                  	              &kp HY(O)  &kp HY(A)  &kp HY(L) &kp HY(L) &kp HY(A) &kp HY(O) 
                         >;
                 };
                 3_layer {
                         label = "3";
                         bindings = <
-   &trans  &kp HY(Q) &kp CA(LG(W)) &kp CA(LG(F)) &kp HY(P) &kp HY(B)     &kp HY(J) &kp LG(N0) &kp LG(MINUS) &kp LG(PLUS) &kp HY(SEMI) &trans
+   &trans  &kp HY(Q) &kp CA(LG(W)) &kp CA(LG(F)) &kp HY(P) &kp HY(B)     &kp HY(J) &kp LG(N0) &kp LG(MINUS) &kp LG(PLUS) &kp HY(S)    &trans
    &trans  &kp PIPE  &kp GRAVE     &kp TILDE     &kp ESC   &kp HY(SPACE) &kp CARET &kp ESC    &kp AMPS      &kp CA(BSLH) &kp CA(RBKT) &trans
-   &trans  &kp HY(S) &kp HY(T)     &kp HY(C)     &kp HY(D) &kp HY(V)     &kp HY(K) &kp HY(H)  &kp HY(A)     &kp HY(E)    &kp HY(I) &trans
-                  	              &trans        &trans        &trans         &trans    &trans     &trans
+   &trans  &kp HY(Z) &kp HY(X)     &kp HY(C)     &kp HY(D) &kp HY(V)     &kp HY(K) &kp HY(H)  &kp HY(A)     &kp HY(E)    &kp HY(I)    &trans
+                  	               &kp HY(N)     &kp HY(R) &kp HY(T)     &kp HY(T) &kp HY(R)  &kp HY(N)
                         >;
                 };
         };
