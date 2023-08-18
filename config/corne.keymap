@@ -22,9 +22,9 @@
                 default_layer {
                         label = "0";
                         bindings = <
-   &trans &mt LCTRL Q &mt LALT W &mt LCMD F &kp P     &kp B    &kp J   &kp L       &mt LCMD U &mt LALT Y   &mt LCTRL SEMI &trans
-   &trans &kp A       &lt 1 R    &lt 2 S    &lt 3 T   &kp G    &kp M   &lt 3 N     &lt 2 E    &kp I        &lt 1 O        &trans
-   &trans &kp Z       &kp X      &kp C      &kp D     &kp V    &kp K   &kp H       &kp COMMA  &kp DOT      &kp FSLH       &trans
+   &trans &mt LCTRL Q &mt LALT W &mt LCMD F &kp P     &kp B    &kp J   &kp L       &mt LCMD U &mt LALT Y &mt LCTRL SEMI &trans
+   &trans &kp A       &lt 1 R    &lt 2 S    &lt 3 T   &kp G    &kp M   &lt 3 N     &lt 2 E    &lt 1 I    &kp O          &trans
+   &trans &kp Z       &kp X      &kp C      &kp D     &kp V    &kp K   &kp H       &kp COMMA  &kp DOT    &kp FSLH       &trans
                                  &kp TAB    &kp LSHFT &kp BSPC &kp SQT &lt 1 SPACE &kp RET
                         >;
                 };
