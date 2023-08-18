@@ -23,7 +23,7 @@
                         label = "0";
                         bindings = <
    &trans &mt LCTRL Q &mt LALT W &mt LCMD F &kp P     &kp B    &kp J   &kp L       &mt LCMD U &mt LALT Y   &mt LCTRL SEMI &trans
-   &trans &kp A       &kp R      &lt 4 S    &lt 5 T   &kp G    &kp M   &lt 5 N     &lt 4 E    &kp I        &kp O          &trans
+   &trans &kp A       &kp R      &lt 2 S    &lt 3 T   &kp G    &kp M   &lt 3 N     &lt 2 E    &kp I        &kp O          &trans
    &trans &kp Z       &kp X      &kp C      &kp D     &kp V    &kp K   &kp H       &kp COMMA  &kp DOT      &kp FSLH       &trans
                                  &kp TAB    &kp LSHFT &kp BSPC &kp SQT &lt 1 SPACE &kp RET
                         >;
@@ -38,8 +38,8 @@
                         >;
                 };
 
-                4_layer {
-                        label = "4";
+                2_layer {
+                        label = "2";
                         bindings = <
    &trans  &kp LC(F12) &kp LC(F7) &kp LC(F8) &kp LC(F9) &trans &kp HY(P) &kp F7 &kp F8 &kp F9 &kp F12 &trans
    &trans  &kp LC(F11) &kp LC(F4) &kp LC(F5) &kp LC(F6) &trans &trans    &kp F4 &kp F5 &kp F6 &kp F11 &trans
@@ -47,8 +47,8 @@
                   	              &trans     &trans     &trans &trans    &trans &trans
                         >;
                 };
-                5_layer {
-                        label = "5";
+                3_layer {
+                        label = "3";
                         bindings = <
    &trans  &kp HY(Q) &kp CA(LG(W)) &kp CA(LG(F)) &kp HY(P) &kp HY(B)     &kp HY(J) &kp LG(N0) &kp LG(MINUS) &kp LG(PLUS) &kp HY(SEMI) &trans
    &trans  &kp PIPE  &kp GRAVE     &kp TILDE     &kp ESC   &kp HY(SPACE) &kp CARET &kp ESC    &kp AMPS      &kp CA(BSLH) &kp CA(RBKT) &trans
