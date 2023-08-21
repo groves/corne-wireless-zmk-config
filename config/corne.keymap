@@ -13,8 +13,11 @@
 
 &mt {
     flavor = "tap-preferred";
+    tapping-term-ms = <300>;
 };
-
+&lt {
+    tapping-term-ms = <300>;
+};
 / {
         keymap {
                 compatible = "zmk,keymap";
