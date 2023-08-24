@@ -11,22 +11,67 @@
 #define CA(key) LC(LA(key))
 #define HY(key) CA(LS(LG(key)))
 
-&mt {
-    flavor = "tap-preferred";
-    tapping-term-ms = <200>;
-};
-&lt {
-    tapping-term-ms = <200>;
-};
+// Doesn't include the thumbs, 36-41
+#define LH 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 
+#define RH 6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 
+
 / {
+        behaviors {
+                lh_lt: positional_hold_tap {
+                    compatible = "zmk,behavior-hold-tap";
+                    label = "LEFT_HAND_LAYER_TAP";
+                    #binding-cells = <2>;
+                    flavor = "tap-preferred";
+                    tapping-term-ms = <200>;
+                    quick-tap-ms = <100>;
+                    global-quick-tap;
+                    bindings = <&mo>, <&kp>;
+                    hold-trigger-key-positions = <LH>;
+                };
+                rh_lt: positional_hold_tap {
+                    compatible = "zmk,behavior-hold-tap";
+                    label = "RIGHT_HAND_LAYER_TAP";
+                    #binding-cells = <2>;
+                    flavor = "tap-preferred";
+                    tapping-term-ms = <200>;
+                    quick-tap-ms = <100>;
+                    global-quick-tap;
+                    bindings = <&mo>, <&kp>;
+                    hold-trigger-key-positions = <RH>;
+                };
+                lh_mt: positional_hold_tap {
+                    compatible = "zmk,behavior-hold-tap";
+                    label = "LEFT_HAND_MOD_TAP";
+                    #binding-cells = <2>;
+                    flavor = "tap-preferred";
+                    tapping-term-ms = <200>;
+                    quick-tap-ms = <100>;
+                    global-quick-tap;
+                    bindings = <&kp>, <&kp>;
+                    hold-trigger-key-positions = <LH>;
+                    hold-trigger-on-release;
+                };
+                rh_mt: positional_hold_tap {
+                    compatible = "zmk,behavior-hold-tap";
+                    label = "RIGHT_HAND_MOD_TAP";
+                    #binding-cells = <2>;
+                    flavor = "tap-preferred";
+                    tapping-term-ms = <200>;
+                    quick-tap-ms = <100>;
+                    global-quick-tap;
+                    bindings = <&kp>, <&kp>;
+                    hold-trigger-key-positions = <RH>;
+                    hold-trigger-on-release;
+                };
+        };
         keymap {
                 compatible = "zmk,keymap";
 
                 default_layer {
                         label = "0";
                         bindings = <
-   &trans &mt LCTRL Q &mt LALT W &mt LCMD F &kp P     &kp B    &kp J   &kp L       &mt LCMD U &mt LALT Y &mt LCTRL SEMI &trans
-   &trans &kp A       &lt 1 R    &lt 2 S    &lt 3 T   &kp G    &kp M   &lt 3 N     &lt 2 E    &lt 1 I    &kp O          &trans
+   &trans &lh_mt LCTRL Q &lh_mt LALT W &mt LCMD F &kp P     &kp B    &kp J   &kp L       &rh_mt LCMD U &rh_mt LALT Y &rh_mt LCTRL SEMI &trans
+   &trans &kp A       &lh_lt 1 R    &lh_lt 2 S    &lh_lt 3 T   &kp G    &kp M   &rh_lt 3 N     &rh_lt 2 E    &rh_lt 1 I    &kp O          &trans
    &trans &kp Z       &kp X      &kp C      &kp D     &kp V    &kp K   &kp H       &kp COMMA  &kp DOT    &kp FSLH       &trans
                                  &kp TAB    &kp LSHFT &kp BSPC &kp SQT &lt 1 SPACE &kp RET
                         >;
