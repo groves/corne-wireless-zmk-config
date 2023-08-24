@@ -17,7 +17,7 @@
 
 / {
         behaviors {
-                lh_lt: positional_hold_tap {
+                lh_lt: lh_positional_layer_tap {
                     compatible = "zmk,behavior-hold-tap";
                     label = "LEFT_HAND_LAYER_TAP";
                     #binding-cells = <2>;
@@ -28,7 +28,7 @@
                     bindings = <&mo>, <&kp>;
                     hold-trigger-key-positions = <LH>;
                 };
-                rh_lt: positional_hold_tap {
+                rh_lt: rh_positional_layer_tap {
                     compatible = "zmk,behavior-hold-tap";
                     label = "RIGHT_HAND_LAYER_TAP";
                     #binding-cells = <2>;
@@ -39,7 +39,7 @@
                     bindings = <&mo>, <&kp>;
                     hold-trigger-key-positions = <RH>;
                 };
-                lh_mt: positional_hold_tap {
+                lh_mt: lh_positional_mod_tap {
                     compatible = "zmk,behavior-hold-tap";
                     label = "LEFT_HAND_MOD_TAP";
                     #binding-cells = <2>;
@@ -51,7 +51,7 @@
                     hold-trigger-key-positions = <LH>;
                     hold-trigger-on-release;
                 };
-                rh_mt: positional_hold_tap {
+                rh_mt: rh_positional_mod_tap {
                     compatible = "zmk,behavior-hold-tap";
                     label = "RIGHT_HAND_MOD_TAP";
                     #binding-cells = <2>;
@@ -70,10 +70,10 @@
                 default_layer {
                         label = "0";
                         bindings = <
-   &trans &lh_mt LCTRL Q &lh_mt LALT W &mt LCMD F &kp P     &kp B    &kp J   &kp L       &rh_mt LCMD U &rh_mt LALT Y &rh_mt LCTRL SEMI &trans
-   &trans &kp A       &lh_lt 1 R    &lh_lt 2 S    &lh_lt 3 T   &kp G    &kp M   &rh_lt 3 N     &rh_lt 2 E    &rh_lt 1 I    &kp O          &trans
-   &trans &kp Z       &kp X      &kp C      &kp D     &kp V    &kp K   &kp H       &kp COMMA  &kp DOT    &kp FSLH       &trans
-                                 &kp TAB    &kp LSHFT &kp BSPC &kp SQT &lt 1 SPACE &kp RET
+   &trans &lh_mt LCTRL Q &lh_mt LALT W &mt LCMD F &kp P      &kp B    &kp J   &kp L       &rh_mt LCMD U &rh_mt LALT Y &rh_mt LCTRL SEMI &trans
+   &trans &kp A          &lh_lt 1 R    &lh_lt 2 S &lh_lt 3 T &kp G    &kp M   &rh_lt 3 N  &rh_lt 2 E    &rh_lt 1 I    &kp O             &trans
+   &trans &kp Z          &kp X         &kp C      &kp D      &kp V    &kp K   &kp H       &kp COMMA     &kp DOT       &kp FSLH          &trans
+                                       &kp TAB    &kp LSHFT  &kp BSPC &kp SQT &lt 1 SPACE &kp RET
                         >;
                 };
                 1_layer {
