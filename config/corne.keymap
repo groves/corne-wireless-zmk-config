@@ -26,7 +26,7 @@
                     quick-tap-ms = <100>;
                     global-quick-tap;
                     bindings = <&mo>, <&kp>;
-                    hold-trigger-key-positions = <LH>;
+                    hold-trigger-key-positions = <RH>;
                 };
                 rh_lt: rh_positional_layer_tap {
                     compatible = "zmk,behavior-hold-tap";
@@ -37,7 +37,7 @@
                     quick-tap-ms = <100>;
                     global-quick-tap;
                     bindings = <&mo>, <&kp>;
-                    hold-trigger-key-positions = <RH>;
+                    hold-trigger-key-positions = <LH>;
                 };
                 lh_mt: lh_positional_mod_tap {
                     compatible = "zmk,behavior-hold-tap";
@@ -48,7 +48,7 @@
                     quick-tap-ms = <100>;
                     global-quick-tap;
                     bindings = <&kp>, <&kp>;
-                    hold-trigger-key-positions = <LH>;
+                    hold-trigger-key-positions = <RH>;
                     hold-trigger-on-release;
                 };
                 rh_mt: rh_positional_mod_tap {
@@ -60,7 +60,7 @@
                     quick-tap-ms = <100>;
                     global-quick-tap;
                     bindings = <&kp>, <&kp>;
-                    hold-trigger-key-positions = <RH>;
+                    hold-trigger-key-positions = <LH>;
                     hold-trigger-on-release;
                 };
         };
