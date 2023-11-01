@@ -95,10 +95,10 @@
                 3_layer {
                         label = "3";
                         bindings = <
-   &trans  &kp HY(Q) &kp CA(LG(W)) &kp CA(LG(F)) &kp HY(P) &kp HY(B)     &kp HY(J) &kp LG(N0) &kp LG(MINUS) &kp LG(PLUS) &bt BT_CLR   &trans
-   &trans  &kp PIPE  &kp GRAVE     &kp TILDE     &kp ESC   &kp HY(SPACE) &kp CARET &kp ESC    &kp AMPS      &kp CA(BSLH) &kp CA(RBKT) &trans
-   &trans  &kp HY(Z) &kp HY(X)     &kp HY(C)     &kp HY(D) &kp HY(V)     &kp HY(K) &kp HY(H)  &kp HY(A)     &kp HY(E)    &kp HY(I)    &trans
-                  	               &kp HY(N)     &kp HY(R) &kp HY(T)     &kp HY(T) &kp HY(R)  &kp HY(N)
+   &trans  &kp HY(Q) &kp CA(LG(W)) &kp CA(LG(F)) &kp HY(P)     &kp HY(B)     &kp HY(J) &kp LG(N0)    &kp LG(MINUS) &kp LG(PLUS) &bt BT_CLR   &trans
+   &trans  &kp PIPE  &kp GRAVE     &kp TILDE     &kp ESC       &kp HY(SPACE) &kp CARET &kp ESC       &kp AMPS      &kp CA(BSLH) &kp CA(RBKT) &trans
+   &trans  &kp HY(Z) &kp HY(X)     &kp HY(C)     &kp HY(D)     &kp HY(V)     &kp HY(K) &kp HY(H)     &kp HY(A)     &kp HY(E)    &kp HY(I)    &trans
+                  	               &kp HY(N)     &kp LG(SPACE) &kp HY(T)     &kp HY(T) &kp LG(SPACE) &kp HY(N)
                         >;
                 };
         };
