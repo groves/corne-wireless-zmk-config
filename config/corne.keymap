@@ -65,7 +65,7 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
-                        label = "0";
+                        display-name = "0";
                         bindings = <
    &trans &lh_mt LCTRL Q &lh_mt LALT W &lh_mt LCMD F &kp P      &kp B    &kp J   &kp L       &rh_mt LCMD U &rh_mt LALT Y &rh_mt LCTRL SEMI &trans
    &trans &kp A          &lh_lt 1 R    &lh_lt 2 S    &lh_lt 3 T &kp G    &kp M   &rh_lt 3 N  &rh_lt 2 E    &rh_lt 1 I    &kp O             &trans
@@ -74,7 +74,7 @@
                         >;
                 };
                 1_layer {
-                        label = "1";
+                        display-name = "1";
                         bindings = <
    &trans  &kp EXCL &kp AT   &kp UP   &kp DLLR  &kp PRCNT &kp BSLH  &kp N7 &kp N8 &kp N9 &kp EQUAL &trans
    &trans  &kp LPAR &kp LEFT &kp DOWN &kp RIGHT &kp RPAR  &kp UNDER &kp N4 &kp N5 &kp N6 &kp MINUS &trans
@@ -84,7 +84,7 @@
                 };
 
                 2_layer {
-                        label = "2";
+                        display-name = "2";
                         bindings = <
    &trans  &kp LC(F12) &kp LC(F7) &kp LC(F8) &kp LC(F9) &kp HY(B) &kp HY(P) &kp F7    &kp F8    &kp F9 &kp F12 &trans
    &trans  &kp LC(F11) &kp LC(F4) &kp LC(F5) &kp LC(F6) &kp HY(G) &kp HY(M) &kp F4    &kp F5    &kp F6 &kp F11 &trans
@@ -93,11 +93,11 @@
                         >;
                 };
                 3_layer {
-                        label = "3";
+                        display-name = "3";
                         bindings = <
-   &trans  &kp HY(Q) &kp CA(LG(W)) &kp CA(LG(F)) &kp HY(P)     &kp HY(B)     &kp HY(J) &kp LG(N0)    &kp LG(MINUS) &kp LG(PLUS) &bt BT_CLR   &trans
-   &trans  &kp PIPE  &kp GRAVE     &kp TILDE     &kp ESC       &kp HY(SPACE) &kp CARET &kp ESC       &kp AMPS      &kp CA(BSLH) &kp CA(RBKT) &trans
-   &trans  &kp HY(Z) &kp HY(X)     &kp HY(C)     &kp HY(D)     &kp HY(V)     &kp HY(K) &kp HY(H)     &kp HY(A)     &kp HY(E)    &kp HY(I)    &trans
+   &trans  &bt BT_SEL 0 &kp CA(LG(W)) &kp CA(LG(F)) &kp HY(P)     &bt BT_SEL 1  &kp HY(J) &kp LG(N0)    &kp LG(MINUS) &kp LG(PLUS) &bt BT_CLR   &trans
+   &trans  &kp PIPE     &kp GRAVE     &kp TILDE     &kp ESC       &kp HY(SPACE) &kp CARET &kp ESC       &kp AMPS      &kp CA(BSLH) &kp CA(RBKT) &trans
+   &trans  &kp HY(Z)    &kp HY(X)     &kp HY(C)     &kp HY(D)     &kp HY(V)     &kp HY(K) &kp HY(H)     &kp HY(A)     &kp HY(E)    &kp HY(I)    &trans
                   	               &kp HY(N)     &kp LG(SPACE) &kp HY(T)     &kp HY(T) &kp LG(SPACE) &kp HY(N)
                         >;
                 };
