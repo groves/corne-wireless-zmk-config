@@ -101,5 +101,17 @@
                   	               &kp HY(N)     &kp LG(SPACE) &kp HY(T)     &kp HY(T) &kp LG(SPACE) &kp HY(N)
                         >;
                 };
+
+                extra_1 {
+                        status = "reserved";
+                };
+
+                extra_2 {
+                        status = "reserved";
+                };
+
+                extra_3 {
+                        status = "reserved";
+                };
         };
 };
