@@ -20,7 +20,7 @@
         behaviors {
                 lh_lt: lh_positional_layer_tap {
                     compatible = "zmk,behavior-hold-tap";
-                    label = "LEFT_HAND_LAYER_TAP";
+                    display-name = "LEFT_HAND_LAYER_TAP";
                     #binding-cells = <2>;
                     flavor = "tap-preferred";
                     tapping-term-ms = <TAP_TERM>;
@@ -30,7 +30,7 @@
                 };
                 rh_lt: rh_positional_layer_tap {
                     compatible = "zmk,behavior-hold-tap";
-                    label = "RIGHT_HAND_LAYER_TAP";
+                    display-name = "RIGHT_HAND_LAYER_TAP";
                     #binding-cells = <2>;
                     flavor = "tap-preferred";
                     tapping-term-ms = <TAP_TERM>;
@@ -40,7 +40,7 @@
                 };
                 lh_mt: lh_positional_mod_tap {
                     compatible = "zmk,behavior-hold-tap";
-                    label = "LEFT_HAND_MOD_TAP";
+                    display-name = "LEFT_HAND_MOD_TAP";
                     #binding-cells = <2>;
                     flavor = "tap-preferred";
                     tapping-term-ms = <TAP_TERM>;
@@ -51,7 +51,7 @@
                 };
                 rh_mt: rh_positional_mod_tap {
                     compatible = "zmk,behavior-hold-tap";
-                    label = "RIGHT_HAND_MOD_TAP";
+                    display-name = "RIGHT_HAND_MOD_TAP";
                     #binding-cells = <2>;
                     flavor = "tap-preferred";
                     tapping-term-ms = <TAP_TERM>;
